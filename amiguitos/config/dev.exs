@@ -36,8 +36,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :amiguitos, Amiguitos.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "amiguitos_dev",
+  password: "123456",
   database: "amiguitos_dev",
   hostname: "localhost",
   pool_size: 10

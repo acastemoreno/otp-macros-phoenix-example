@@ -17,6 +17,8 @@ defmodule Amiguitos.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/hola", PageController, :saludo
+    get "/hola/:nombre", PageController, :saludo_nombre
   end
 
   # Other scopes may use custom stacks.
